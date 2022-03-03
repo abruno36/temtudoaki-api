@@ -15,7 +15,7 @@ export class Usuario {
   @Column({ length: 255 })
   password: string;
 
-  @Column({length: 15})
+  @Column({length: 15, name: "telefone"}) //no caso do atributo name, seria para forçar um nome no banco de dados. 
   telefone: string;
 
   @Column({length: 14})
